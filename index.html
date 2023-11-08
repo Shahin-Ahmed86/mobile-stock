@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Mobile Shop</title>
+</head>
+<body>
+    <!-- header section -->
+    <div class="header">
+        <h5>Mobile Shop</h5>
+    </div>
+
+<!-- upper button box section -->
+
+    <div class="upper-btn-box">
+        <div class="left-box">
+            <button id="addProductBtn"><i class="fs fa-plus"></i>&nbsp; Add Product</button>
+            <button ><i class="fs fa-eraser"></i>&nbsp; Clear Filter</button>
+        </div>
+        <div class="right-box">
+            <i class="fa fa-search"></i>
+            <input type="text" id="search" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <!-- Show Data Table section -->
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>Sr No</th>
+                <th>Id</th>
+                <th>Product</th>
+                <th>Ime</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total Price</th>
+                <th>Action</th>
+            </tr>
+            <tbody id="table-data">
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal section start -->
+
+    <div class="modal">
+        <i class="fa fa-times-circle close-icon"></i>
+        <div class="left-modal">
+            <div class="img-box">
+                <img src="./restoran1.jpg" alt="">
+                <i class="fa fa-plus"></i>
+                <input type="file" alt="Profile">
+            </div>
+        </div>
+        <div class="right-modal">
+            <form id="product-form">
+                <div class="input-box">
+                    <label for="id">id</label>
+                    <input id="id" type="text" placeholder="product Id" required>
+                </div>
+                <div class="input-box">
+                    <label for="name">Product Name</label>
+                    <input id="product-name" type="text" placeholder="Enter product name" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="number">Ime Number</label>
+                    <input id="ime-namer" type="number" placeholder="Ime Number" required>
+                </div>
+                <div class="input-box">
+                    <label for="Quantity" >Quantity</label>
+                    <input id="Quantity" type="number" placeholder="Quantity" required>
+                </div>
+                <div class="input-box">
+                    <label for="Price">Price</label>
+                    <input id="Price" type="number" placeholder="Price" required>
+                </div>
+                <!-- <div class="input-box">
+                    <label for="total Price">total Price</label>
+                    <input id="total-Price" type="number" placeholder="total Price" required>
+                </div> -->
+                <div>
+                    <button class="Post-btn" id="Post-btn">Post</button>
+                    <button class="update-btn">Update</button>
+                    
+                </div>
+            </form>
+            
+       </div>
+        </div>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
